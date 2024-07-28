@@ -1,0 +1,101 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0.5em 0 0;
+}
+
+.images,
+.score {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.images img {
+    max-width: 100px;
+    margin: 10px;
+    transition: opacity 0.3s ease;
+}
+
+img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.score {
+    gap: 2rem;
+}
+
+.score p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.container > p {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: black;
+    width: 80%;
+    max-width: 300px;
+    margin: 40px auto 0;
+    padding: 1rem 0.5rem;
+    border-radius: 12px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .images img {
+        max-width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+
+    .score p {
+        font-size: 2em;
+    }
+
+    .container > p {
+        font-size: 2em;
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    .images img {
+        max-width: 300px;
+        height: 300px;
+        margin: 30px;
+    }
+
+    .score p {
+        font-size: 2.5em;
+    }
+
+    .container > p {
+        font-size: 2.5em;
+        width: 50%;
+    }
+}
